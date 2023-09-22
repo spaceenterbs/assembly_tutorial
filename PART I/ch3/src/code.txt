@@ -1,0 +1,21 @@
+
+ // a,b,c 중 가장 큰수는 ? 
+
+ if(a < b) 
+ {
+	max = b;
+ }
+ else
+ {
+	max = a;
+ }
+ 
+ 
+ if( max < c )
+ {
+	max = c;
+ }
+ else
+ {
+	max = max; 
+ }

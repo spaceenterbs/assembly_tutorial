@@ -1,0 +1,91 @@
+//알고리즘 의사 코드 
+ax=0; //합을 저장 
+for(cx=10;0 < cx ;cx--){
+   ax = ax + cx;   
+}
+print(ax)
+=============================
+//알고리즘 의사 코드 
+ax=0; //total
+bx=1; // index 
+for(cx = 10; 0 < cx; cx--){
+	ax = ax + bx;
+	bx++;
+}
+=============================
+//알고리즘 의사 코드 
+ax=0; //합 
+bx =0; //index
+do{
+	ax = ax + bx;
+	bx++;
+}while( bx <=10)
+
+=============================
+//알고리즘 의사 코드 
+ax =0;//합
+bx=0; //index 
+while(bx <= 10)
+{
+	ax = ax + bx;
+	bx++;
+}
+=============================
+//알고리즘 의사 코드 
+my1[3](W)={0x1234,0x4567,10}; // 배열 변수 (소스 변수)
+you1[3](W); // 복사를 받을 변수 
+edx; // 인덱스 변수 (0,1,2)
+
+//복사
+edx=0;
+for(ecx=3, 0 < ecx;ecx--){
+	eax = my1[edx];
+	you1[edx]=eax;
+	edx++;
+}
+
+//출력 
+edx=0;
+do{
+	print(my1[edx])
+	edx++;
+}while(edx < 3);
+
+=============================
+
+//알고리즘 의사 코드 
+data_max(W); // 입력된 경계값 변수 
+data_size(W); // 3의 배수 개수를 저장하는 변수  
+data[100](W);// 3의 배수를 저장하는 배열 변수 
+edx; // 인덱스 변수용 
+
+data_max = input();
+data_size=0
+edx=1; // [1 ~  data_max]
+do{
+  ah = ax / 3의 나머지;
+  if(ah == 0)
+  {
+     data[data_size] = edx;
+	 data_size++;
+  }
+  edx++;
+} while( edx <= data_max)
+
+=============================
+//알고리즘 의사 코드 
+total(W);// 3의 배수의 합을 구한 값 
+data_size(W);//3의 배수의 개수 = 배열의 크기 
+data[100](W);//3의 부슬 저장하고 있는 배열 변수 
+eax; //index 변수 (0 ~ 3으ㅐ 배수 개수)
+ebx; //합을 구하는 변수
+
+total=0;
+eax =0; 
+ebx=0;
+for(ecx=data_size; 0 < ecx  ; ecx--)
+{
+   ebx = ebx + data[eax];
+   eax++;	
+}
+total = ebx;

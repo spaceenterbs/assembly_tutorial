@@ -1,0 +1,62 @@
+ 
+
+int data[6]; 
+void main()
+{
+	int size=0;
+	while( size < 6)
+	{
+	
+		a= getnumber();
+		if(1!= checksame(a,size))
+		{			
+			data[size]=a;
+			size = size + 1;
+		}
+	}
+	
+	showdata(data);
+}
+void inimylib()
+{
+	srand(time(NULL));
+}
+int getnumber()
+{
+	int a;
+	srand(time(NULL));
+	a= rand()%45 + 1;
+			
+	return a;
+}
+ 
+void showdata()
+{
+	t=0;
+	print("lotto:");
+	while(t<6)
+	{
+		print(data[t]); 
+		t=t+1;
+		if(t <5)
+		{
+			print(",")
+		}
+	}
+}
+int checksame(eax,ebx)
+{
+	t=0;
+	while(t < ebx)
+	{
+		if (data[t] == eax)
+		{
+			eax = 1;
+			return eax;
+		}
+		t=t+1;
+	}
+	
+	eax=0;
+	return eax;
+}
